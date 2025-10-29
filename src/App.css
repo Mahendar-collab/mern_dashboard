@@ -1,0 +1,332 @@
+/* 🌟 Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&family=Comme:wght@100..900&family=Hind+Guntur:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* 🌐 Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Comme", sans-serif;
+  background-color: #fafafa;
+}
+
+/* ===============================
+   🌈 NAVBAR
+================================= */
+.navSection {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #F46036;
+  align-items: center;
+  color: white;
+  padding: 0 20px;
+  font-size: large;
+}
+
+.userAuth, .logout {
+  cursor: pointer;
+}
+
+/* ===============================
+   🧭 SIDEBAR
+================================= */
+.sideBarSection {
+  width: 100%;
+  max-width: 15%;
+  padding-top: 10px;
+  background-color: #2E294E;
+  color: white;
+}
+
+.sideBarSection ul li {
+  list-style: none;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: medium;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sideBarSection ul li:hover {
+  color: #F46036;
+  transform: translateX(5px);
+}
+
+.collectionSection {
+  display: flex;
+}
+
+/* ===============================
+   🔐 LOGIN & REGISTER
+================================= */
+.loginSection, .registerSection {
+  margin-top: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.authForm {
+  width: 100%;
+  max-width: 70%;
+  margin-top: -230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid gray;
+  border-radius: 10px;
+  position: relative;
+}
+
+.authForm label {
+  width: 100%;
+  max-width: 55%;
+  font-weight: 400;
+}
+
+.authForm input {
+  width: 100%;
+  max-width: 55%;
+  height: 2rem;
+  font-size: medium;
+  margin-bottom: 20px;
+}
+
+.showPassword {
+  margin-right: 50px;
+  font-weight: 500;
+  font-family: "Roboto";
+  font-size: 14px;
+}
+
+/* ===============================
+   🏢 ADD FIRM FORM (NEW DESIGN)
+================================= */
+.firmSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+  min-height: 100vh;
+  padding: 20px;
+  margin-top: 0px;
+}
+
+/* Form Container */
+.tableForm {
+  width: 100%;
+  max-width: 500px;
+  background: white;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.8s ease;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.tableForm:hover {
+  transform: translateY(-5px);
+}
+
+/* Heading */
+.tableForm h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  color: #2E294E;
+  margin-bottom: 25px;
+}
+
+/* Labels */
+.tableForm label {
+  display: block;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 6px;
+  margin-top: 15px;
+}
+
+/* Text Inputs */
+.tableForm input[type="text"],
+.tableForm input[type="file"] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.tableForm input[type="text"]:focus,
+.tableForm input[type="file"]:focus {
+  border-color: #F46036;
+  box-shadow: 0 0 5px rgba(244, 96, 54, 0.5);
+}
+
+/* Checkbox Section */
+.checkInp {
+  width: 100%;
+  margin-top: 15px;
+  text-align: left;
+}
+
+.inputsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 8px;
+}
+
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #f6f6f6;
+  padding: 6px 10px;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+.checkboxContainer:hover {
+  background: #fdece5;
+}
+
+.checkboxContainer label {
+  font-weight: 500;
+  color: #2E294E;
+}
+
+/* File Input */
+.tableForm input[type="file"] {
+  background: #fff;
+  border: 1px dashed #aaa;
+  padding: 8px;
+  cursor: pointer;
+}
+
+/* Submit Button */
+.btnSubmit button {
+  background: linear-gradient(90deg, #2E294E, #F46036);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 25px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btnSubmit button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(244, 96, 54, 0.5);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===============================
+   🧾 PRODUCT TABLE
+================================= */
+.productSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-table {
+  width: 80vw;
+  border-collapse: collapse;
+}
+
+.product-table th,
+.product-table td {
+  border: 1px solid rgb(128, 128, 128);
+  padding: 8px;
+}
+
+.product-table th {
+  text-align: left;
+  background-color: rgb(47, 77, 212);
+  color: white;
+}
+
+.deleteBtn {
+  color: red;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ===============================
+   🚫 ERROR PAGE
+================================= */
+.errorSection {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.errorSection h1 {
+  font-size: 4rem;
+}
+
+h3 {
+  color: #D7263D;
+}
+
+/* ===============================
+   🖼️ LANDING PAGE
+================================= */
+.welcomeSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.landingImage {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -100px;
+}
+
+.welcomeSection h2 {
+  font-size: 3rem;
+  text-align: center;
+  position: relative;
+  top: -80px;
+  color: #2073c0;
+}
+
+.loaderSection {
+  z-index: 10000;
+}
