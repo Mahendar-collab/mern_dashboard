@@ -29,6 +29,12 @@ body {
   cursor: pointer;
 }
 
+.brand{
+  width: 60px;
+  height:60px;
+  border-radius:50%;
+}
+
 /* ===============================
    🧭 SIDEBAR
 ================================= */

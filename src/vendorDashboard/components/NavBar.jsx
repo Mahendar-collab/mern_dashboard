@@ -7,7 +7,7 @@ const NavBar = ({showLoginHandler,showRegisterHandler, showLogOut, logOutHandler
   return (
     <div className="navSection">
         <div className="company">
-            Vendor Dashboard
+            <img src="https://res.cloudinary.com/dlutckjoc/image/upload/v1761800088/ChatGPT_Image_Oct_30_2025_10_15_10_AM_cfdkzt.png" alt="brand" className='brand' />
         </div>
         <div className="firmName">
           <h4>Firmname : {firmName}</h4>
